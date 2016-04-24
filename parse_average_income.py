@@ -10,7 +10,7 @@ for line in file:
     if not line.startswith("Income: ") : continue
     
     # Extract number from the string
-    number = line[20::1]
+    number = line[8::1]
     # Convert it to float format
     number = float (number)
     
