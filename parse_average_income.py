@@ -2,12 +2,12 @@
 filename = raw_input("Enter file name: ")
 file = open(filename)
 
-# Calculate the sum of the numbers and count the number of rows
+# Calculate the sum of the incomes and count the number of rows
 total = 0
 i = 0
 
 for line in file:
-    if not line.startswith("X-DSPAM-Confidence:") : continue
+    if not line.startswith("Income: ") : continue
     
     # Extract number from the string
     number = line[20::1]
